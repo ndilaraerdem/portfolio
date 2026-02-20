@@ -19,6 +19,12 @@ function HomePage() {
                   justifyContent="center">
                 <Grid>
                     <ProjectCard
+                        title="Duty Pharmacy Demo"
+                        description="Location-aware duty pharmacy finder built with React and TypeScript. Features mock API structure, geolocation integration, distance calculation and Google Maps directions."                    />
+
+                </Grid>
+                <Grid>
+                    <ProjectCard
                         title="User Management Panel"
                         description="Enterprise-style user management application built with React and Material UI."
                     />

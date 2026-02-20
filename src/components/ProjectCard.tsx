@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography, Button, Stack } from "@mui/material";
+import { Card, CardContent, Typography, Button, Stack, Box } from "@mui/material";
 
 type Props = {
     title: string;
@@ -25,12 +25,27 @@ function ProjectCard({ title, description }: Props) {
                 </Typography>
 
                 <Stack direction="row" spacing={1}>
-                    <Button variant="contained" size="small">
-                        Live Demo
-                    </Button>
-                    <Button variant="outlined" size="small">
-                        GitHub
-                    </Button>
+                    <Box display="flex" gap={1} mt={2}>
+                        <Button
+                            variant="contained"
+                            size="small"
+                            href="https://duty-pharmacy-demo.vercel.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live Demo
+                        </Button>
+
+                        <Button
+                            variant="outlined"
+                            size="small"
+                            href="https://github.com/ndilaraerdem/duty-pharmacy-demo"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </Button>
+                    </Box>
                 </Stack>
             </CardContent>
         </Card>
